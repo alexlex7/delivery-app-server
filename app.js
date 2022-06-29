@@ -2,6 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
 const shopsRouter = require('./routes/api/shops');
+const goodsRouter = require('./routes/api/goods');
 require('dotenv').config();
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/shops', shopsRouter);
+app.use('/api/goods', goodsRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not found' });

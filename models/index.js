@@ -1,4 +1,4 @@
-const { Contact, schemas } = require('./contact');
 const { Shop } = require('./shops');
+const { Good } = require('./goods');
 
-module.exports = { Contact, schemas, Shop };
+module.exports = { Shop, Good };
