@@ -10,6 +10,15 @@ const goodSchema = Schema({
   shopName: {
     type: String,
   },
+  price: {
+    type: Number,
+  },
+  qty: {
+    type: Number,
+  },
+  image: {
+    type: String,
+  },
 });
 
 const Good = model('good', goodSchema);
