@@ -60,7 +60,10 @@ const addOrder = Joi.object({
     })
     .required(),
   name: Joi.string().min(3).max(40).required(),
-  phone: Joi.string().min(6).max(12).required(),
+  phone: Joi.string()
+    .length(10)
+    .pattern(/^[0-9]+$/)
+    .required(),
 });
 
 const schemas = { addOrder };
