@@ -1,0 +1,28 @@
+.navigation {
+  min-width: 380px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(128, 171, 250);
+}
+
+.activeLink {
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgb(23, 85, 201);
+}
+
+.lineElement {
+  display: inline-block;
+  height: 30px;
+  border-left: 2px solid black;
+  margin-right: 30px;
+  margin-left: 30px;
+}
