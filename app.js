@@ -5,6 +5,7 @@ const shopsRouter = require('./routes/api/shops');
 const goodsRouter = require('./routes/api/goods');
 const ordersRouter = require('./routes/api/orders');
 require('dotenv').config();
+const path = require('path');
 
 const app = express();
 
@@ -16,6 +17,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 app.use(cors());
 app.use(express.json());
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
 app.use('/api/shops', shopsRouter);
 app.use('/api/goods', goodsRouter);
