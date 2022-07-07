@@ -51,7 +51,7 @@ const orderSchema = Schema({
 const Order = model('order', orderSchema);
 
 const addOrder = Joi.object({
-  address: Joi.string().required(),
+  address: Joi.string().min(10).required(),
   cartItems: Joi.array().items(Joi.object()).required(),
   email: Joi.string()
     .email({

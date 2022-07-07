@@ -67,7 +67,7 @@ export default function Basket({ cartItems, onAdd, onRemove, setCartItems }) {
         setCartItems([]);
       }
     } catch (error) {
-      console.log(error.message);
+      alert(error.response.data.message);
     }
   };
   return (
