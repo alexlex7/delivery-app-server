@@ -1,5 +1,9 @@
 # delivery-app-server
 
+## Hosting
+
+https://delivery-appl.herokuapp.com/
+
 ## Команди:
 
 `npm start` — старт сервера в режимі production
