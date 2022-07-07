@@ -5,7 +5,6 @@ const shopsRouter = require('./routes/api/shops');
 const goodsRouter = require('./routes/api/goods');
 const ordersRouter = require('./routes/api/orders');
 require('dotenv').config();
-const path = require('path');
 
 const app = express();
 
